@@ -1,5 +1,6 @@
 {
     "name": "jerrylopez/classnames",
+    "description": "A utility to construct HTML class name strings in PHP",
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -15,7 +16,11 @@
             "email": "jerry@92labs.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.1.0"
+    },
     "require-dev": {
         "pestphp/pest": "^2.34"
     },
