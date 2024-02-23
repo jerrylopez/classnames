@@ -1,6 +1,6 @@
 <h3 align="center">Classnames</h3>
 
-<p align="center">A utility to construct HTML class name strings.</p>
+<p align="center">A utility to construct HTML class name strings in PHP.</p>
 
 <hr />
 
@@ -114,3 +114,5 @@ use function Jerrylopez\Classnames\{cn}
 </div>
 ```
 
+## Credit
+This package was inspired by the <a href="https://github.com/lukeed/clsx">clsx</a> package in JS community.
