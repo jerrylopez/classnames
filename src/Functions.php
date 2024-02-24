@@ -12,14 +12,19 @@ if (! function_exists('classnames')) {
         foreach($classes as $value) {
             if (is_array($value)) {
                 foreach($value as $key => $val) {
-                    if ($val) {
+                    if ($val && !empty($key)) {
                         $string[] = $key;
                     }
                 }
-            } else {
-                $string[] = $value;
+
+                continue;
             }
 
+            if (empty($value)) {
+                continue;
+            }
+
+            $string[] = $value;
         }
 
         return implode(' ', $string);
